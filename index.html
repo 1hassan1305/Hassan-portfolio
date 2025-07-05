@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hassan | Video Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 class="main-title" id="title"></h1>
+
+    <p class="subtitle">Creative edits. Iconic moments. Bold visuals.</p>
+  </header>
+
+  <section class="work" data-aos="fade-up">
+    <h2 class="section-title">My Work</h2>
+    
+<section class="about">
+  <h2>About Me</h2>
+  <p>
+    I'm Hassan — a passionate video editor who turns anime and gaming moments into cinematic edits. Whether it's a high-impact AMV or a dramatic cutscene remix, I bring my love for storytelling and style to every frame.
+  </p>
+</section>
+
+<section class="skills">
+  <h2>Tools I Use</h2>
+  <ul>
+    <li>CapCut</li>
+    <li>DaVinci Resolve</li>
+    <li>Adobe Premiere Pro (learning)</li>
+    <li>HTML, CSS, JavaScript</li>
+  </ul>
+</section>
+
+
+    <video controls>
+  <source src="mikassa-edit.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact me via 
+      <a href="https://wa.me/+923340734889" target="_blank">WhatsApp</a> | 
+      <a href="https://instagram.com/h.a.s.s.a.n___a.l.i" target="_blank">Instagram</a>
+    </p>
+<section class="contact">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+
+
+  </footer>
+
+  <script>
+    // Typewriter intro effect
+    const text = "Hassan's Anime & Gaming Edits";
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("title").textContent += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 80);
+      }
+    }
+    window.onload = typeWriter;
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
+
+
+
