@@ -87,3 +87,20 @@ h2 {
   color: #00ffff;
 }
 
+.videos video {
+  max-width: 100%;
+  height: auto;
+}
+
+.videos video {
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.videos video:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffff;
+}
+
