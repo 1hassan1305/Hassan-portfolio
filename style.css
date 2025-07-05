@@ -104,3 +104,17 @@ h2 {
   box-shadow: 0 0 20px #00ffff;
 }
 
+@media (max-width: 600px) {
+  .video-title {
+    font-size: 16px;
+  }
+
+  .video-box video {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+}
+
