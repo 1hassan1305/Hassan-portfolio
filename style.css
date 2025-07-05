@@ -152,3 +152,19 @@ h2 {
   text-shadow: 0 0 6px #00ff88;
 }
 
+gon-edit .gon-video {
+  border: 2px solid #00ff88;
+  box-shadow: 0 0 12px #00ff88;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gon-edit .gon-video:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 24px #00ff88;
+}
+
+.gon-edit .video-title {
+  text-shadow: 0 0 6px #00ff88;
+  color: #ffffff;
+}
+
