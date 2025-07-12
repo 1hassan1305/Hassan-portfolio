@@ -15,6 +15,8 @@
   <header>
     <h1 class="main-title" id="title"></h1>
 
+
+
     <p class="subtitle">Creative edits. Iconic moments. Bold visuals.</p>
   </header>
 
@@ -106,20 +108,19 @@
   </footer>
 
   <script>
-    // Typewriter intro effect
-    const text = "Hassan's Anime & Gaming Edits";
-    let i = 0;
-    function typeWriter() {
-      if (i < text.length) {
-        document.getElementById("title").textContent += text.charAt(i);
-        i++;
-        setTimeout(typeWriter, 80);
-      }
+  const text = "Hassan's Montages, AMVs, and Smooth Edits";
+  let i = 0;
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("title").textContent = text.substring(0, i + 1);
+      i++;
+      setTimeout(typeWriter, 80); // adjust speed here
     }
-    window.onload = typeWriter;
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
+  }
+  window.onload = typeWriter;
+</script>
+
+
   AOS.init();
 </script>
 
