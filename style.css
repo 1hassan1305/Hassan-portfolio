@@ -167,3 +167,35 @@ gon-edit .gon-video {
   color: #ffffff;
 }
 
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.video-box {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.video-box:hover {
+  transform: scale(1.02);
+}
+
+.video-title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #fca311;
+}
+
+video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+
