@@ -94,7 +94,11 @@
     </p>
 <section class="contact">
   <h2>Contact Me</h2>
-  <form action="https://formsubmit.co/hassansahab315@email.com" method="POST">
+  <form action="https://formsubmit.co/hassansahab@email.com" method="POST">
+  <!-- This hides the spam captcha and adds a nice message -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_autoresponse" value="Thanks for your message! I’ll reply soon.">
+
   <input type="text" name="name" placeholder="Your Name" required>
   <input type="email" name="email" placeholder="Your Email" required>
   <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
