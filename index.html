@@ -94,16 +94,14 @@
     </p>
 <section class="contact">
   <h2>Contact Me</h2>
-  <form action="https://formsubmit.co/hassansahab@email.com" method="POST">
-  <!-- This hides the spam captcha and adds a nice message -->
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_autoresponse" value="Thanks for your message! I’ll reply soon.">
+  <p>Contact me via email: <span id="email"></span></p>
 
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-  <button type="submit">Send</button>
-</form>
+<script>
+  const user = "hassansahab315";
+  const domain = "gmail.com";
+  document.getElementById("email").innerHTML =
+    `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
+</script>
 
 
 </section>
