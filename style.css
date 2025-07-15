@@ -207,3 +207,22 @@ video {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+@media (max-width: 400px) {
+  .main-title, .section-title {
+    font-size: 1.2rem;
+  }
+
+  .video-title {
+    font-size: 14px;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: 100%;
+  }
+}
