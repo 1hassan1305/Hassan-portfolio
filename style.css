@@ -214,3 +214,27 @@ html {
 
 
 hassansahab315@gmail.com
+.video-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .video-gallery {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .video-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-box video {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
