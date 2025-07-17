@@ -169,8 +169,9 @@ gon-edit .gon-video {
 }
 
 .video-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
   padding: 2rem;
 }
@@ -238,3 +239,61 @@ hassansahab315@gmail.com
   }
 }
 
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.video-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.video-box video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 10px #00ffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-box video:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffff;
+}
+
+.video-title {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #fca311;
+  text-align: center;
+  text-shadow: 0 0 6px #00ff88;
+}
+
+@media (max-width: 600px) {
+  .video-gallery {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .video-box {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .video-box video {
+    width: 100%;
+  }
+}
